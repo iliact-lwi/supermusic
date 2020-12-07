@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/supermusic/static/css/main.a027154d.chunk.css",
+    "main.js": "/supermusic/static/js/main.86f6753d.chunk.js",
+    "main.js.map": "/supermusic/static/js/main.86f6753d.chunk.js.map",
+    "runtime-main.js": "/supermusic/static/js/runtime-main.116c5eb0.js",
+    "runtime-main.js.map": "/supermusic/static/js/runtime-main.116c5eb0.js.map",
+    "static/js/2.42c803a1.chunk.js": "/supermusic/static/js/2.42c803a1.chunk.js",
+    "static/js/2.42c803a1.chunk.js.map": "/supermusic/static/js/2.42c803a1.chunk.js.map",
+    "static/js/3.f1a4c115.chunk.js": "/supermusic/static/js/3.f1a4c115.chunk.js",
+    "static/js/3.f1a4c115.chunk.js.map": "/supermusic/static/js/3.f1a4c115.chunk.js.map",
+    "index.html": "/supermusic/index.html",
+    "static/css/main.a027154d.chunk.css.map": "/supermusic/static/css/main.a027154d.chunk.css.map",
+    "static/js/2.42c803a1.chunk.js.LICENSE.txt": "/supermusic/static/js/2.42c803a1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.116c5eb0.js",
+    "static/js/2.42c803a1.chunk.js",
+    "static/css/main.a027154d.chunk.css",
+    "static/js/main.86f6753d.chunk.js"
+  ]
+}
