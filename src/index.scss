@@ -1,0 +1,11 @@
+@import './bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600&display=swap');
+@import './colors.scss';
+
+body {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    background-color: $dark-500;
+    color: $light-500;
+}

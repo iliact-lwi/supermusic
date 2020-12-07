@@ -1,0 +1,26 @@
+@import '../../colors.scss';
+
+.search-tracks {
+    // &__header {
+    // }
+
+    &__status {
+        color: rgba(241, 197, 66, 1);
+    }
+
+    &__button-box {
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+    &__button {
+        width: 100%;
+        font-size: 18px;
+        font-weight: 600;
+        color: $dark-500;
+    }
+}
+
+.search-tracks_padding-top-50 {
+    padding-top: 50px;
+}

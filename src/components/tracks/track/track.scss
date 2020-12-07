@@ -1,0 +1,53 @@
+@import '../../../colors.scss';
+
+.track {
+    display: flex;
+    border: 1px solid $grey-400;
+    border-radius: 2px;
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px 0px 20px 30px;
+    }
+
+    &__header {
+        max-width: 450px;
+    }
+
+    &__name {
+        font-weight: 600;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__artist {
+        font-size: 16px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: $grey-400;
+        cursor: pointer;
+        transition: color 0.1s ease-in-out;
+
+        &:hover {
+            color: $hover;
+        }
+    }
+
+    &__author-url {
+        text-decoration: none;
+        line-height: 1;
+        color: $light-500;
+        transition: color 0.1s ease-in-out;
+
+        &:hover {
+            text-decoration: none;
+            color: $hover;
+        }
+    }
+}

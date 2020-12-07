@@ -1,0 +1,37 @@
+@import '../../colors.scss';
+
+.navigation {
+    background-color: $dark-900;
+    height: 100px;
+    display: flex;
+    align-items: center;
+
+    &__body {
+        width: 100%;
+        padding: 0px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        font-size: 28px;
+        font-weight: 600;
+        transition: color 0.1s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            color: $hover;
+        }
+    }
+
+    &__search {
+        color: $light-500;
+        cursor: pointer;
+        transition: color 0.1s ease-in-out;
+
+        &:hover {
+            color: $hover;
+        }
+    }
+}

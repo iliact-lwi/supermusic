@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
+import { useDispatch } from 'react-redux';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import { getTopTracks } from './store/actions';
+
+import './App.scss';
+
+import NavigationComponent from './components/navigation';
+import IndexPage from './pages/IndexPage';
+import SearchPage from './pages/SearchPage';
+import ArtistPage from './pages/ArtistPage';
+
+const App: React.FunctionComponent = () => {
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(getTopTracks());
+    }, [dispatch]);
+
+    return (
+        <Router>
+            <NavigationComponent />
+            <Container className="main">
+                <Switch>
+                    <Route component={IndexPage} path="/" exact />
+                    <Route component={SearchPage} path="/search" />
+                    <Route component={ArtistPage} path="/artist/:artist" />
+                </Switch>
+            </Container>
+        </Router>
+    );
+};
 
 export default App;
