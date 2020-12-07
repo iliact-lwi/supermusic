@@ -20,7 +20,7 @@ const App: React.FunctionComponent = () => {
     }, [dispatch]);
 
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <NavigationComponent />
             <Container className="main">
                 <Switch>

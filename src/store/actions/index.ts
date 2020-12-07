@@ -125,7 +125,7 @@ export const getTopTracks = (): ThunkAction<
     return async (dispatch) => {
         try {
             const response = await fetch(
-                `http://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=${API_KEY}&page=${page}&format=json`
+                `https://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=${API_KEY}&page=${page}&format=json`
             );
 
             if (response.ok) {
@@ -164,7 +164,7 @@ export const getArtistInfo = (
     return async (dispatch) => {
         try {
             const response = await fetch(
-                `http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&mbid=${mbid}&artist=${name}&api_key=${API_KEY}&format=json`
+                `https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&mbid=${mbid}&artist=${name}&api_key=${API_KEY}&format=json`
             );
 
             if (response.ok) {
@@ -205,7 +205,7 @@ export const getSearchTracks = (
     return async (dispatch) => {
         try {
             const response = await fetch(
-                `http://ws.audioscrobbler.com/2.0/?method=track.search&track=${track}&limit=10&api_key=${API_KEY}&format=json`
+                `https://ws.audioscrobbler.com/2.0/?method=track.search&track=${track}&limit=10&api_key=${API_KEY}&format=json`
             );
 
             if (response.ok) {
